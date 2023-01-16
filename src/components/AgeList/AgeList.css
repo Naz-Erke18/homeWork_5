@@ -1,0 +1,27 @@
+.age-list {
+  width: 700px;
+  /* height: 400px; */
+  background-image: linear-gradient(90deg, #a5fecb, #5433ff, #20bdff);
+  /* box-shadow: ; */
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 5px 5px 10px 10px rgba(9, 47, 137, 0.5);
+}
+
+.list {
+  list-style: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 640px;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 10px;
+  box-shadow: 10px 5px 5px rgb(34, 59, 146);
+  background-image: linear-gradient(
+    90deg,
+      #20bdff,#a5fecb,#5433ff
+  );
+}

@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { AgeList } from "./components/AgeList/AgeList";
+import { Biography } from "./components/biography/Biography";
 
 function App() {
+  const [dataName, setData] = useState([
+    {
+      name: "Bayaman👨🏻‍💻",
+      age: 21,
+    },
+    {
+      name: "Naz-Erke💃🏼",
+      age: 21,
+    },
+    {
+      name: "Kurmanzhan🦥",
+      age: 19,
+    },
+  ]);
+  dataName.sort((a,b)=>{
+return b.age-a.age
+  })
+
+  const newData = (data) => {
+    // console.log(data);
+    const copyData = [...dataName];
+    copyData.push(data);
+    setData(copyData);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Biography data={newData} />
+      <AgeList data={dataName} />
     </div>
   );
 }
