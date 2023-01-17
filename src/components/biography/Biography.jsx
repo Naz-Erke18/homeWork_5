@@ -1,5 +1,5 @@
 import { Input } from "../input/Input";
-import "./Biography.css";
+import styles from "./Biography.module.css";
 import { Button } from "../Button/Button";
 import { useState } from "react";
 
@@ -31,8 +31,8 @@ export const Biography = ({ data }) => {
 
   return (
     <div>
-      <div className="App">
-        <form className="Form">
+      <div className={styles.App}>
+        <form className={styles.Form}>
           <Input
             placeholder="write your name"
             label="Username"

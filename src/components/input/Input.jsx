@@ -1,14 +1,14 @@
-import "./Input.css";
+import styles from "./Input.module.css";
 
 export const Input = ({ label, inputType, placeholder,...rest}) => {
   console.log(rest);
   return (
     <div>
-      <div className="input">
-        <label className="input_label">{label}</label>
+      <div className={styles.input}>
+        <label className={styles.input_label}>{label}</label>
         <input
           type={inputType}
-          className="input_label"
+          className={styles.input_label}
           placeholder={placeholder}
          {...rest}
         />
