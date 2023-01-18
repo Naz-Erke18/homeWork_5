@@ -24,7 +24,7 @@ export const Biography = ({ data }) => {
       age,
     };
     data(newAgeUser);
-    // console.log(data);
+   
     setName("");
     setAge("");
   };
